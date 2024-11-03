@@ -67,7 +67,7 @@ layers:
   - ''''
   - ;
   - ':'
-  - LEFT SHIFT
+  - {t: '=', h: LEFT SHIFT}
   - +
   - '-'
   - '{'
