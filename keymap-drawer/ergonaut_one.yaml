@@ -37,8 +37,8 @@ layers:
   - /
   - {t: \, h: RIGHT SHIFT}
   - LEFT WIN
-  - {t: ⌦, h: lower}
-  - {t: ␣, h: raise}
+  - {t: ␣, h: lower}
+  - {t: DELETE, h: raise}
   - {t: ENTER, h: raise}
   - {t: ⌫, h: lower}
   - {t: CAPSLOCK, h: Ctrl}
