@@ -26,37 +26,37 @@
 
         default_layer {
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E                  &kp R      &kp T      &kp Y        &kp U       &kp I      &kp O    &kp P     &kp BACKSLASH
-&mt LCTRL TAB   &kp A  &kp S  &kp D                  &kp F      &kp G      &kp H        &kp J       &kp K      &kp L    &kp SEMI  &mt LEFT_ALT SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                  &kp V      &kp B      &kp N        &kp M       &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BSLH
-                              &mt LEFT_WIN LEFT_WIN  &lt 1 DEL  &lt 2 RET  &lt 2 SPACE  &lt 1 BSPC  &kp CLCK
+&kp ESC         &kp Q  &kp W  &kp E                  &kp R      &kp T      &kp Y        &kp U       &kp I                  &kp O    &kp P     &kp BACKSLASH
+&mt LCTRL TAB   &kp A  &kp S  &kp D                  &kp F      &kp G      &kp H        &kp J       &kp K                  &kp L    &kp SEMI  &mt LEFT_ALT SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                  &kp V      &kp B      &kp N        &kp M       &kp COMMA              &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BSLH
+                              &mt LEFT_WIN LEFT_WIN  &lt 1 DEL  &lt 2 RET  &lt 2 SPACE  &lt 1 BSPC  &mt LEFT_ALT CAPSLOCK
             >;
         };
 
         lower_layer {
             bindings = <
-&mt LGUI F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-&mt LALT EQUAL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8    &kp N9    &kp N0    &kp RALT
-                                  &trans    &trans    &trans     &trans     &trans    &trans
+&kp BACKSLASH   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4      &kp N5                &kp N6                 &kp N7             &kp N8           &kp N9         &kp N0         &kp UNDERSCORE
+&kp SLASH       &kp EXCL      &kp AT        &kp HASH        &kp DLLR          &kp PRCNT             &kp CARET              &kp AMPS           &kp STAR         &kp SQT        &kp SEMICOLON  &kp COLON
+&kp LEFT_SHIFT  &kp PLUS      &kp MINUS     &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp LESS_THAN  &kp GT         &kp RIGHT_SHIFT
+                                            &trans          &trans            &trans                &kp COMMA              &kp DOT            &kp DQT
             >;
         };
 
         raise_layer {
             bindings = <
-&mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
-&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
-                                             &trans     &trans     &trans        &trans        &trans    &trans
+&kp F1  &kp F2      &kp F3      &kp F4      &kp F5        &kp F6           &kp HOME         &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp INS       &kp PRINTSCREEN
+&kp F7  &kp F8      &kp F9      &kp F10     &kp F11       &kp F12          &kp END          &kp LEFT   &kp DOWN  &kp RIGHT      &kp INS       &kp K_LOCK
+&none   &kp K_STOP  &kp C_PLAY  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp PAUSE_BREAK  &none      &none     &none          &kp C_BRI_UP  &kp C_BRI_DEC
+                                &trans      &trans        &trans           &trans           &trans     &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-&bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
-                                         &trans        &none         &trans        &none         &trans        &trans
+&bootloader  &none          &none          &none          &bt BT_PRV     &bt BT_NXT     &none         &none         &none         &none         &none         &bootloader
+&bt BT_CLR   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR_ALL
+&sys_reset   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none         &none         &none         &none         &none         &sys_reset
+                                           &trans         &none          &trans         &none         &trans        &trans
             >;
         };
     };
