@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - P
-  - '='
+  - '['
   - {t: ↹, h: Ctrl}
   - A
   - S
@@ -24,7 +24,7 @@ layers:
   - L
   - ;
   - {t: '''', h: LEFT ALT}
-  - LEFT SHIFT
+  - {t: '=', h: LEFT SHIFT}
   - Z
   - X
   - C
@@ -43,7 +43,7 @@ layers:
   - {t: ⌫, h: lower}
   - {t: CAPSLOCK, h: Ctrl}
   lower:
-  - \
+  - '`'
   - '1'
   - '2'
   - '3'
