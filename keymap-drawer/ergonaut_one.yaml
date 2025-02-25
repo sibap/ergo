@@ -1,6 +1,7 @@
+layout: {zmk_keyboard: ergonaut_one}
 layers:
   default:
-  - Esc
+  - {t: Esc, h: LEFT ALT}
   - Q
   - W
   - E
@@ -12,7 +13,7 @@ layers:
   - O
   - P
   - '['
-  - {t: ↹, h: Ctrl}
+  - {t: ↹, h: LEFT SHIFT}
   - A
   - S
   - D
@@ -23,8 +24,8 @@ layers:
   - K
   - L
   - ;
-  - {t: '''', h: LEFT ALT}
-  - {t: '=', h: LEFT SHIFT}
+  - {t: '''', h: RIGHT SHIFT}
+  - {t: '=', h: Ctrl}
   - Z
   - X
   - C
@@ -35,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - {t: \, h: RIGHT SHIFT}
+  - {t: \, h: Ctrl}
   - LEFT WIN
   - {t: ␣, h: lower}
   - {t: ENTER, h: raise}
